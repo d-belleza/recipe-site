@@ -188,9 +188,6 @@
     };
 
 
-  
-
-     
     $(function () {
         mobileMenuOutsideClick();
         offcanvasMenu();
@@ -200,6 +197,5 @@
         goToTop();
       
     });
-
 
 }());
