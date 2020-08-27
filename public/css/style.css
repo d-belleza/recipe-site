@@ -114,6 +114,16 @@ figure {
   padding: 40px;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
@@ -805,10 +815,17 @@ figure {
   display: table-cell;
   vertical-align: middle;
   height: 90px;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 40px;
   color: #fff;
 }
+
+.feature-center .icon i.flaticon-appetizer {
+  padding-top: 37%;
+  font-size: 75px;
+}
+
+
 .feature-center p,
 .feature-center h3 {
   margin-bottom: 30px;
