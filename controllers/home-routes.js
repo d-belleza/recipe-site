@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Recipe, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     console.log(req.session)
@@ -31,9 +31,9 @@ router.get('/', (req, res) => {
     })
         .then(dbPostData => {
           //console.log(dbPostData[0]);
-          const posts = dbPostData.map(post => post.get({ plain: true }));
+          const recipes = dbPostData.map(recipe => recipe.get({ plain: true }));
           res.render('homepage', {
-            posts,
+            recipes,
             loggedIn: req.session.loggedIn
           });
         })
