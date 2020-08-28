@@ -1,12 +1,85 @@
 const router = require('express').Router();
-const { Recipe } = require('../../models');
+const { Recipe, User, Comment } = require('../../models');
 //const withAuth = require('../../utils/auth');
+
+
+// get all recipes
+router.get('/', (req, res) => {
+    Recipe.findAll({
+        attributes: [
+            'id',
+            'title',
+            'ingredients',
+            'recipe_steps',
+            'category',
+            'image_url'
+        ],
+        order: [['created_at', 'DESC']], 
+        include: [
+            {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'user_id', 'recipe_id'],
+              include: {
+                model: User,
+                attributes: ['username']
+              }
+            },
+            {
+              model: User,
+              attributes: ['username']
+            }
+        ]
+    })
+    .then(dbPostData => res.json(dbPostData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+//get one recipe
+router.get('/:id', (req, res) => {
+    Recipe.findOne({
+      where: {
+        id: req.params.id
+      },
+      attributes: [
+        'id',
+        'title',
+        'ingredients',
+        'recipe_steps',
+        'category',
+        'image_url'
+      ],
+      include: [
+        {
+          model: User,
+          attributes: ['username']
+        }
+      ]
+    })
+      .then(dbPostData => {
+        if (!dbPostData) {
+          res.status(404).json({ message: 'No post found with this id' });
+          return;
+        }
+        res.json(dbPostData);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+});
+
 
 router.post('/', (req, res) => {
     // expects {title: 'Title', content: 'Content', user_id: 1}
     Recipe.create({
       title: req.body.title,
-      content: req.body.content,
+      ingredients: req.body.ingredients,
+      recipe_steps: req.body.recipe_steps,
+      category: req.body.category,
+      image_url: req.body.image_url,
       user_id: req.session.user_id
     })
       .then(dbPostData => res.json(dbPostData))
