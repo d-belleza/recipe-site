@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Recipe } = require('../../models');
-const withAuth = require('../../utils/auth');
+//const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     // expects {title: 'Title', content: 'Content', user_id: 1}
     Recipe.create({
       title: req.body.title,
@@ -17,7 +17,7 @@ router.post('/', withAuth, (req, res) => {
 });
 
 // update by user_id
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', (req, res) => {
     Recipe.update(req.body,
       {
         where: {
@@ -39,7 +39,7 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 // delete by user_id
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', (req, res) => {
     Recipe.destroy({
       where: {
         id: req.params.id
