@@ -114,10 +114,23 @@ figure {
   padding: 35px;
 }
 
+/* list styling in steps (single page) */
 
+.single ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 10px;
+}
 
+.single ul li:before {
+  font-family: 'icomoon';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  content: '\e116';
 
-
+}
 
 
 
