@@ -111,13 +111,26 @@ figure {
 
 .desc {
   background: rgba(255, 255, 255, 0.3);
-  padding: 40px;
+  padding: 35px;
 }
 
+/* list styling in steps (single page) */
 
+.single ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 10px;
+}
 
+.single ul li:before {
+  font-family: 'icomoon';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  content: '\e116';
 
-
+}
 
 
 
@@ -820,11 +833,6 @@ figure {
   color: #fff;
 }
 
-.feature-center .icon i.flaticon-appetizer {
-  padding-top: 37%;
-  font-size: 75px;
-}
-
 
 .feature-center p,
 .feature-center h3 {
@@ -846,11 +854,11 @@ figure {
   background-repeat: no-repeat;
   position: relative;
   height: 350px;
-  margin-bottom: 20px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .product .product-grid .sale {
   position: absolute;
   top: 10px;
@@ -946,7 +954,7 @@ figure {
   float: left;
   margin: 0;
   padding: 0;
-  width: 33.33%;
+  width: 20%;
   text-align: center;
   list-style: none;
   display: -moz-inline-stack;
@@ -955,8 +963,10 @@ figure {
   *display: inline;
 }
 .fh5co-tabs .fh5co-tab-nav li .icon {
-  font-size: 30px;
+  font-size: 45px;
 }
+
+
 .fh5co-tabs .fh5co-tab-nav li a {
   padding: 20px;
   width: 100%;

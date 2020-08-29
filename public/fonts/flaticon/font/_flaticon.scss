@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 27/08/2020 22:59
+    Creation date: 29/08/2020 05:27
     */
 
     @font-face {
@@ -37,24 +37,20 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-salad:before { content: "\f100"; }
-.flaticon-fried-egg:before { content: "\f101"; }
-.flaticon-cooking:before { content: "\f102"; }
-.flaticon-steak:before { content: "\f103"; }
+    .flaticon-appetizer:before { content: "\f100"; }
+.flaticon-pancakes:before { content: "\f101"; }
+.flaticon-boiled:before { content: "\f102"; }
+.flaticon-salad:before { content: "\f103"; }
 .flaticon-piece-of-cake:before { content: "\f104"; }
-.flaticon-salad-1:before { content: "\f105"; }
-.flaticon-boiled:before { content: "\f106"; }
-.flaticon-pancakes:before { content: "\f107"; }
-.flaticon-pancakes-1:before { content: "\f108"; }
-.flaticon-appetizer:before { content: "\f109"; }
+.flaticon-fried-egg:before { content: "\f105"; }
+.flaticon-fried-egg-1:before { content: "\f106"; }
+.flaticon-steak:before { content: "\f107"; }
     
-    $font-Flaticon-salad: "\f100";
-    $font-Flaticon-fried-egg: "\f101";
-    $font-Flaticon-cooking: "\f102";
-    $font-Flaticon-steak: "\f103";
+    $font-Flaticon-appetizer: "\f100";
+    $font-Flaticon-pancakes: "\f101";
+    $font-Flaticon-boiled: "\f102";
+    $font-Flaticon-salad: "\f103";
     $font-Flaticon-piece-of-cake: "\f104";
-    $font-Flaticon-salad-1: "\f105";
-    $font-Flaticon-boiled: "\f106";
-    $font-Flaticon-pancakes: "\f107";
-    $font-Flaticon-pancakes-1: "\f108";
-    $font-Flaticon-appetizer: "\f109";
+    $font-Flaticon-fried-egg: "\f105";
+    $font-Flaticon-fried-egg-1: "\f106";
+    $font-Flaticon-steak: "\f107";
