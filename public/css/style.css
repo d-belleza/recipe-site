@@ -820,11 +820,6 @@ figure {
   color: #fff;
 }
 
-.feature-center .icon i.flaticon-appetizer {
-  padding-top: 37%;
-  font-size: 75px;
-}
-
 
 .feature-center p,
 .feature-center h3 {
@@ -850,6 +845,7 @@ figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .product .product-grid .sale {
   position: absolute;
   top: 10px;
@@ -945,7 +941,7 @@ figure {
   float: left;
   margin: 0;
   padding: 0;
-  width: 33.33%;
+  width: 20%;
   text-align: center;
   list-style: none;
   display: -moz-inline-stack;
@@ -954,8 +950,10 @@ figure {
   *display: inline;
 }
 .fh5co-tabs .fh5co-tab-nav li .icon {
-  font-size: 30px;
+  font-size: 45px;
 }
+
+
 .fh5co-tabs .fh5co-tab-nav li a {
   padding: 20px;
   width: 100%;
