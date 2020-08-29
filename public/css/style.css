@@ -99,6 +99,8 @@ figure {
   background: #fff;
 }
 
+
+/***** Over write starts *****/
 .hero-banner {
   min-height : 650px;
   background-image: url(../images/hero_banner.jpg);
@@ -132,9 +134,27 @@ figure {
 
 }
 
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
 
 
-
+.feed > div blockquote {
+  border-left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.04);
+}
+.feed > div h3 {
+font-family: "Playfair Display", serif;
+font-size: 18px;
+display: inline-block;
+padding-right: 20px;
+}
+/***** Over wirtes ends *****/
 
 
 @media screen and (max-width: 768px) {
