@@ -44,8 +44,6 @@ router.get('/recipe/:id', (req,res) => {
       attributes: [
         'id',
         'title',
-        'ingredients',
-        'recipe_steps',
         'category',
         'image_url',
         'created_at'
@@ -85,5 +83,37 @@ router.get('/recipe/:id', (req,res) => {
       res.status(500).json(err);
   });
 })
+
+router.get('/recipe/:category', (req, res) => {
+  console.log(req.session)
+  Recipe.findAll({
+      where: {
+        category: req.params.category
+      },
+      attributes: [
+          'id',
+          'title',
+          'image_url'
+      ],
+      order: [['created_at', 'DESC']], 
+      include: [
+          {
+            model: User,
+            attributes: ['username']
+          }
+      ]
+  })
+      .then(dbPostData => {
+        const recipes = dbPostData.map(recipe => recipe.get({ plain: true }));
+        res.render('category', {
+          recipes,
+          loggedIn: req.session.loggedIn
+        });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+});
 
 module.exports = router;
