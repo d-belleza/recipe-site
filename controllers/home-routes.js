@@ -116,4 +116,13 @@ router.get('/recipe/:category', (req, res) => {
       });
 });
 
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login-page', { layout: 'login'});
+});
+
 module.exports = router;
