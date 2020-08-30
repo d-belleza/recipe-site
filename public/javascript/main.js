@@ -102,6 +102,7 @@
 
     };
 
+    // Tabs function on recipes page to filter the category
     var tabs = function () {
 
         // Auto adjust height
