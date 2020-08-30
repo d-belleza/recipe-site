@@ -1,2 +1,36 @@
-{{> recipe-info recipe}}
+<div id="fh5co-product" class="fh5co-bg-section">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>{{recipe.title}}</h2>
+            </div>
+        </div>
 
+        <div class="row animate-box single fh5co-heading">
+            <div class="col-md-6">
+                <div class="desc">
+                    <h3>Ingredients</h3>
+                    <p>{{recipe.ingredients}}</p>
+                </div>
+                <div class="desc">
+                    <h3>Steps</h3>
+                    <ul>
+                        <li>{{recipe.recipe_steps}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="images/meat_mushroom_burger.jpg" alt="Meat Mushroom Burger">
+            </div>
+            <div class="col-md-12 text-center mt-25">
+                <h4>Posted by {{user.username}} on {{format_date recipe.created_at}}</h4>
+            </div>
+        </div>
+
+        {{#if recipe.comments.length}}
+            {{> comments recipe.comments}}
+        {{/if}}
+
+
+    </div>
+</div>
