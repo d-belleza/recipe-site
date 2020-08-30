@@ -17,21 +17,12 @@ router.get('/', (req, res) => {
         order: [['created_at', 'DESC']], 
         include: [
             {
-              model: Comment,
-              attributes: ['id', 'comment_text', 'user_id', 'recipe_id'],
-              include: {
-                model: User,
-                attributes: ['username']
-              }
-            },
-            {
               model: User,
               attributes: ['username']
             }
         ]
     })
         .then(dbPostData => {
-          //console.log(dbPostData[0]);
           const recipes = dbPostData.map(recipe => recipe.get({ plain: true }));
           res.render('homepage', {
             recipes,
