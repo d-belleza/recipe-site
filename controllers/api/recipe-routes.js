@@ -74,6 +74,9 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
     // expects {title: 'Title', content: 'Content', user_id: 1}
+    console.log("\n=======================================\n")
+    console.log(req.body)
+    console.log("\n=======================================\n")
     Recipe.create({
       title: req.body.title,
       ingredients: req.body.ingredients,

@@ -188,6 +188,17 @@
 
     };
 
+    // var addRecipe = function () {
+    //     console.log('addRecipe')
+
+    //     $('.add-recipe').on('click', function (event) {
+    //            event.preventDefault();
+    //            console.log('clicked')
+
+    //     });
+    // };
+
+
 
     $(function () {
         mobileMenuOutsideClick();
@@ -196,6 +207,7 @@
         dropdown();
         tabs();
         goToTop();
+        // addRecipe();
       
     });
 
