@@ -45,6 +45,11 @@ router.get('/', (req, res) => {
 
 });
 
+// add new recipe
+router.get('/new', (req,res) => {
+  res.render('add-post');
+})
+
 // when clicking on edit post, will be redirected to this page
 router.get('/edit/:id', (req, res) => {
     Recipe.findByPk(req.params.id, {
