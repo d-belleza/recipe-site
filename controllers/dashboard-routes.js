@@ -45,7 +45,6 @@ router.get('/', (req, res) => {
 
 });
 
-
 // when clicking on edit post, will be redirected to this page
 router.get('/edit/:id', (req, res) => {
     Recipe.findByPk(req.params.id, {

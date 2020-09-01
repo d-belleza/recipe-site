@@ -3,11 +3,11 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="post-title"]').value;
+    const title = document.querySelector('.title').value;
     // splits ingredients & steps by the comma and puts into an array
-    const ingredients = document.querySelector('input[name="ingredients"]').value.split(",");
-    const recipe_steps = document.querySelector('input[name="recipe-steps"]').value.split(",");
-    const image_url = document.querySelector('input[name="post-url"]').value;
+    const ingredients = document.querySelector('.ingredients').value.split(",");
+    const recipe_steps = document.querySelector('.steps').value.split(",");
+    const image_url = document.querySelector('.image_link').value;
   
     const response = await fetch(`/api/posts`, {
       method: 'POST',
