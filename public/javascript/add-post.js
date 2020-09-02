@@ -5,19 +5,11 @@ async function newFormHandler(event) {
     console.log('submit is working')
   
     const title = document.querySelector('#title').value;
-    // splits ingredients & steps by the comma and puts into an array
     const ingredients = document.querySelector('#ingredients').value;
     const recipe_steps = document.querySelector('#steps').value;
     const image_url = document.querySelector('#image_link').value;
     const category = document.querySelector('#category').value;
-    
-    // how do we grab the category?
-
-    console.log('title', title);
-    console.log('ingredients', ingredients);
-    console.log('steps', recipe_steps);
-    console.log('category', category);
-    console.log('url', image_url);
+  
 
     const response = await fetch(`/api/recipes`, {
       method: 'POST',

@@ -1,5 +1,3 @@
-// function can still be edited based on how html is written since dashboard has not yet been created
-
 async function deleteFormHandler(event) {
     event.preventDefault();
   
@@ -7,7 +5,9 @@ async function deleteFormHandler(event) {
       window.location.toString().split('/').length - 1
     ];
 
-    const response = await fetch(`/api/posts/${id}`, {
+    console.log(id);
+
+    const response = await fetch(`/api/recipes/${id}`, {
       method: 'DELETE'
     });
   
@@ -19,4 +19,3 @@ async function deleteFormHandler(event) {
   }
   
   document.querySelector('.delete-recipe-btn').addEventListener('click', deleteFormHandler);
-  
