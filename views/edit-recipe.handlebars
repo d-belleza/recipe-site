@@ -14,7 +14,7 @@
                         <form action="#">
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <label for="title">Title</label>
+                                    <label for="title">{{title}}</label>
                                     <input type="text" id="title" class="form-control" placeholder="Berries Pancake">
                                 </div>
                             </div>
@@ -23,7 +23,7 @@
                                 <div class="col-md-12">
                                     <label for="ingredients">Ingredients</label>
                                     <textarea name="ingredients" id="ingredients" cols="30" rows="10"
-                                        class="form-control" placeholder=""></textarea>
+                                        class="form-control" placeholder="{{ingredients}}"></textarea>
                                 </div>
                             </div>
 
@@ -31,14 +31,14 @@
                                 <div class="col-md-12">
                                     <label for="steps">Steps</label>
                                     <textarea name="steps" id="steps" cols="30" rows="10" class="form-control"
-                                        placeholder=""></textarea>
+                                        placeholder="{{recipe_steps}}"></textarea>
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label for="image_link">Image link</label>
-                                    <input type="text" id="image_link" class="form-control" placeholder="">
+                                    <input type="text" id="image_link" class="form-control" placeholder="{{image_url}}">
                                 </div>
                             </div>
 
