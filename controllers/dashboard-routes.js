@@ -47,7 +47,7 @@ router.get('/', (req, res) => {
 
 // add new recipe
 router.get('/new', (req,res) => {
-  res.render('add-post');
+  res.render('add-post', {loggedIn: true});
 })
 
 // when clicking on edit post, will be redirected to this page
