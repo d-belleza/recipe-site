@@ -1,18 +1,18 @@
-// function can still be edited based on how html is written since dashboard has not yet been created
-
 async function editFormHandler(event) {
-    event.preventDefault();
+  event.preventDefault();
+  console.log('submit is working')
   
-    const title = document.querySelector('input[name="post-title"]').value.trim();
-    // splits ingredients & steps by the comma and puts into an array
-    const ingredients = document.querySelector('input[name="ingredients"]').value.split(",");
-    const recipe_steps = document.querySelector('input[name="recipe-steps"]').value.split(",");
-    const image_url = document.querySelector('input[name="post-url"]').value;
-    const id = window.location.toString().split('/')[
-      window.location.toString().split('/').length - 1
-    ];
+  const title = document.querySelector('#title').value;
+  const ingredients = document.querySelector('#ingredients').value;
+  const recipe_steps = document.querySelector('#steps').value;
+  const image_url = document.querySelector('#image_link').value;
+  const category = document.querySelector('#category').value;
+
+  const id = window.location.toString().split('/')[
+    window.location.toString().split('/').length - 1
+  ];
     
-    const response = await fetch(`/api/posts/${id}`, {
+    const response = await fetch(`/api/recipes/${id}`, {
       method: 'PUT',
       body: JSON.stringify({
         title,

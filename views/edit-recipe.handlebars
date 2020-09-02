@@ -11,7 +11,7 @@
                 <div class="row animate-box">
                     <div class="col-md-8 col-md-offset-2 fh5co-heading">
 
-                        <form action="#">
+                        <form class="edit-recipe-form" action="#">
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label for="title">Title</label>
@@ -30,8 +30,8 @@
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label for="steps">Steps</label>
-                                    <textarea name="steps" id="steps" cols="30" rows="10" class="form-control"
-                                        placeholder="{{recipe.recipe_steps}}"></textarea>
+                                    <textarea name="steps" id="steps" cols="30" rows="10" class="form-control">
+                                        {{recipe_steps}}</textarea>
                                 </div>
                             </div>
 
@@ -69,4 +69,6 @@
                 </div>
 
     <script src="/javascript/delete-post.js"></script>
+    <script src="/javascript/edit-post.js"></script>
+
 
