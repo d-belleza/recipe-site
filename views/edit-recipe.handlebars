@@ -1,0 +1,69 @@
+
+        <div id="fh5co-product">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Update this recipe</h2>
+                    </div>
+
+                </div>
+
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 fh5co-heading">
+
+                        <form action="#">
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="title">{{title}}</label>
+                                    <input type="text" id="title" class="form-control" placeholder="Berries Pancake">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="ingredients">Ingredients</label>
+                                    <textarea name="ingredients" id="ingredients" cols="30" rows="10"
+                                        class="form-control" placeholder="{{ingredients}}"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="steps">Steps</label>
+                                    <textarea name="steps" id="steps" cols="30" rows="10" class="form-control"
+                                        placeholder="{{recipe_steps}}"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="image_link">Image link</label>
+                                    <input type="text" id="image_link" class="form-control" placeholder="{{image_url}}">
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="category">Category</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <select id="category" class="select-css">
+                                        <option value="">Please choose a category</option>
+                                        <option value="Appetizers">Appetizers</option>
+                                        <option value="Breakfast">Breakfast</option>
+                                        <option value="Main Course">Main Course</option>
+                                        <option value="Dessert">Dessert</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="form-group mt-40 text-center">
+                                <input type="submit" value="Update" class="btn btn-primary">
+                                <input type="submit" value="Delete" class="btn btn-primary">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>

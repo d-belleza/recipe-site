@@ -45,6 +45,10 @@ router.get('/', (req, res) => {
 
 });
 
+// add new recipe
+router.get('/new', (req,res) => {
+  res.render('add-post', {loggedIn: true});
+})
 
 // when clicking on edit post, will be redirected to this page
 router.get('/edit/:id', (req, res) => {
@@ -59,14 +63,6 @@ router.get('/edit/:id', (req, res) => {
         ],
         include: [
         {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-            include: {
-            model: User,
-            attributes: ['username']
-            }
-        },
-        {
             model: User,
             attributes: ['username']
         }
@@ -75,7 +71,7 @@ router.get('/edit/:id', (req, res) => {
         .then(dbPostData => {
         const post = dbPostData.get({ plain: true });
 
-        res.render('edit-post', {
+        res.render('edit-recipe', {
         post,
         loggedIn: true
         });

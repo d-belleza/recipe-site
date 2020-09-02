@@ -2,19 +2,30 @@
 
 async function newFormHandler(event) {
     event.preventDefault();
+    console.log('submit is working')
   
-    const title = document.querySelector('input[name="post-title"]').value;
+    const title = document.querySelector('#title').value;
     // splits ingredients & steps by the comma and puts into an array
-    const ingredients = document.querySelector('input[name="ingredients"]').value.split(",");
-    const recipe_steps = document.querySelector('input[name="recipe-steps"]').value.split(",");
-    const image_url = document.querySelector('input[name="post-url"]').value;
-  
-    const response = await fetch(`/api/posts`, {
+    const ingredients = document.querySelector('#ingredients').value;
+    const recipe_steps = document.querySelector('#steps').value;
+    const image_url = document.querySelector('#image_link').value;
+    const category = document.querySelector('#category').value;
+    
+    // how do we grab the category?
+
+    console.log('title', title);
+    console.log('ingredients', ingredients);
+    console.log('steps', recipe_steps);
+    console.log('category', category);
+    console.log('url', image_url);
+
+    const response = await fetch(`/api/recipes`, {
       method: 'POST',
       body: JSON.stringify({
         title,
         ingredients,
-        recipe_steps, 
+        recipe_steps,
+        category, 
         image_url
       }),
       headers: {
