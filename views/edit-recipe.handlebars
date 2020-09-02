@@ -14,8 +14,8 @@
                         <form action="#">
                             <div class="row form-group">
                                 <div class="col-md-12">
-                                    <label for="title">{{title}}</label>
-                                    <input type="text" id="title" class="form-control" placeholder="Berries Pancake">
+                                    <label for="title">Title</label>
+                                    <input type="text" id="title" class="form-control" value="{{recipe.title}}">
                                 </div>
                             </div>
 
@@ -23,7 +23,7 @@
                                 <div class="col-md-12">
                                     <label for="ingredients">Ingredients</label>
                                     <textarea name="ingredients" id="ingredients" cols="30" rows="10"
-                                        class="form-control" placeholder="{{ingredients}}"></textarea>
+                                        class="form-control" placeholder="{{recipe.ingredients}}"></textarea>
                                 </div>
                             </div>
 
@@ -31,14 +31,14 @@
                                 <div class="col-md-12">
                                     <label for="steps">Steps</label>
                                     <textarea name="steps" id="steps" cols="30" rows="10" class="form-control"
-                                        placeholder="{{recipe_steps}}"></textarea>
+                                        placeholder="{{recipe.recipe_steps}}"></textarea>
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-12">
                                     <label for="image_link">Image link</label>
-                                    <input type="text" id="image_link" class="form-control" placeholder="{{image_url}}">
+                                    <input type="text" id="image_link" class="form-control" placeholder="{{recipe.image_url}}">
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@
                             </div>
                             <div class="form-group mt-40 text-center">
                                 <input type="submit" value="Update" class="btn btn-primary">
-                                <input type="submit" value="Delete" class="btn btn-primary">
+                                <input type="submit" value="Delete" class="btn btn-primary delete-recipe-btn">
                             </div>
 
                         </form>
@@ -67,3 +67,6 @@
                     </div>
 
                 </div>
+
+    <script src="/javascript/delete-post.js"></script>
+
