@@ -69,10 +69,10 @@ router.get('/edit/:id', (req, res) => {
         ]}
     )
         .then(dbPostData => {
-        const post = dbPostData.get({ plain: true });
+        const recipe = dbPostData.get({ plain: true });
 
         res.render('edit-recipe', {
-        post,
+        recipe,
         loggedIn: true
         });
 
