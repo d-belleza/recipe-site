@@ -63,14 +63,6 @@ router.get('/edit/:id', (req, res) => {
         ],
         include: [
         {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-            include: {
-            model: User,
-            attributes: ['username']
-            }
-        },
-        {
             model: User,
             attributes: ['username']
         }
@@ -79,7 +71,7 @@ router.get('/edit/:id', (req, res) => {
         .then(dbPostData => {
         const post = dbPostData.get({ plain: true });
 
-        res.render('edit-post', {
+        res.render('edit-recipe', {
         post,
         loggedIn: true
         });
