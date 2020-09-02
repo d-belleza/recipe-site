@@ -9,12 +9,14 @@ async function newFormHandler(event) {
     const ingredients = document.querySelector('#ingredients').value.split(",");
     const recipe_steps = document.querySelector('#steps').value.split(",");
     const image_url = document.querySelector('#image_link').value;
+    const category = document.querySelector('#category').value;
     
     // how do we grab the category?
 
     console.log('title', title);
     console.log('ingredients', ingredients);
     console.log('steps', recipe_steps);
+    console.log('category', category);
     console.log('url', image_url);
 
     const response = await fetch(`/api/posts`, {
@@ -22,7 +24,8 @@ async function newFormHandler(event) {
       body: JSON.stringify({
         title,
         ingredients,
-        recipe_steps, 
+        recipe_steps,
+        category, 
         image_url
       }),
       headers: {
