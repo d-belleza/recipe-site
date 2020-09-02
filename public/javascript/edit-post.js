@@ -1,7 +1,6 @@
 async function editFormHandler(event) {
   event.preventDefault();
-  console.log('submit is working')
-  
+    
   const title = document.querySelector('#title').value;
   const ingredients = document.querySelector('#ingredients').value;
   const recipe_steps = document.querySelector('#steps').value;
@@ -18,7 +17,8 @@ async function editFormHandler(event) {
         title,
         ingredients,
         recipe_steps,
-        image_url
+        image_url,
+        category
       }),
       headers: {
         'Content-Type': 'application/json'
