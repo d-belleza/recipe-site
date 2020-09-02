@@ -37,6 +37,43 @@ router.get('/', (req, res) => {
     });
 });
 
+// get all recipes by category
+router.get('/:category', (req, res) => {
+  Recipe.findAll({
+      where: {
+        category: req.params.category
+      },
+      attributes: [
+          'id',
+          'title',
+          'ingredients',
+          'recipe_steps',
+          'category',
+          'image_url'
+      ],
+      order: [['created_at', 'DESC']], 
+      include: [
+          {
+            model: Comment,
+            attributes: ['id', 'comment_text', 'user_id', 'recipe_id'],
+            include: {
+              model: User,
+              attributes: ['username']
+            }
+          },
+          {
+            model: User,
+            attributes: ['username']
+          }
+      ]
+  })
+  .then(dbPostData => res.json(dbPostData))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
+});
+
 //get one recipe
 router.get('/:id', (req, res) => {
     Recipe.findOne({

@@ -35,8 +35,39 @@ router.get('/', (req, res) => {
         });
 });
 
+// find all recipes
+router.get('/recipes', (req, res) => {
+  console.log(req.session)
+  Recipe.findAll({
+      attributes: [
+          'id',
+          'title',
+          'category',
+          'image_url'
+      ],
+      order: [['created_at', 'DESC']], 
+      include: [
+          {
+            model: User,
+            attributes: ['username']
+          }
+      ]
+  })
+      .then(dbPostData => {
+        const recipes = dbPostData.map(recipe => recipe.get({ plain: true }));
+        res.render('category', {
+          recipes,
+          loggedIn: req.session.loggedIn
+        });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+});
+
 // get single post
-router.get('/recipe/:id', (req,res) => {
+router.get('/recipes/:id', (req,res) => {
   Recipe.findOne({
       where: {
         id: req.params.id
@@ -84,8 +115,8 @@ router.get('/recipe/:id', (req,res) => {
   });
 })
 
-router.get('/recipe/:category', (req, res) => {
-  console.log(req.session)
+router.get('/recipes/category/:category', (req, res) => {
+  console.log(req.params.category)
   Recipe.findAll({
       where: {
         category: req.params.category
@@ -93,6 +124,7 @@ router.get('/recipe/:category', (req, res) => {
       attributes: [
           'id',
           'title',
+          'category',
           'image_url'
       ],
       order: [['created_at', 'DESC']], 
@@ -104,6 +136,10 @@ router.get('/recipe/:category', (req, res) => {
       ]
   })
       .then(dbPostData => {
+        if (!dbPostData) {
+          res.status(404).json({ message: 'No post found with this category' });
+          return;
+        }
         const recipes = dbPostData.map(recipe => recipe.get({ plain: true }));
         res.render('category', {
           recipes,
