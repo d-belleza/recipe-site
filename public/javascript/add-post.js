@@ -6,8 +6,8 @@ async function newFormHandler(event) {
   
     const title = document.querySelector('#title').value;
     // splits ingredients & steps by the comma and puts into an array
-    const ingredients = document.querySelector('#ingredients').value.split(",");
-    const recipe_steps = document.querySelector('#steps').value.split(",");
+    const ingredients = document.querySelector('#ingredients').value;
+    const recipe_steps = document.querySelector('#steps').value;
     const image_url = document.querySelector('#image_link').value;
     const category = document.querySelector('#category').value;
     
@@ -19,7 +19,7 @@ async function newFormHandler(event) {
     console.log('category', category);
     console.log('url', image_url);
 
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/recipes`, {
       method: 'POST',
       body: JSON.stringify({
         title,
