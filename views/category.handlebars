@@ -11,19 +11,19 @@
             <div class="fh5co-tabs animate-box">
                 <!-- Tabs -->
                 <ul class="fh5co-tab-nav">
-                    <li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i
+                    <li class="active"><a href="/recipes" data-tab="1"><span class="icon visible-xs"><i
                                     class="flaticon-salad"></i></span><span class="hidden-xs">View All</span></a>
                     </li>
-                    <li><a href="#" data-tab="2"><span class="icon visible-xs"><i
+                    <li><a href="/recipes/category/Appetizers" data-tab="2"><span class="icon visible-xs"><i
                                     class="flaticon-appetizer"></i></span><span class="hidden-xs">Appetizers</span></a>
                     </li>
-                    <li><a href="#" data-tab="3"><span class="icon visible-xs"><i
+                    <li><a href="/recipes/category/Breakfast" data-tab="3"><span class="icon visible-xs"><i
                                     class="flaticon-fried-egg"></i></span><span
                                 class="hidden-xs">Breakfast</span></a></li>
-                    <li><a href="#" data-tab="4"><span class="icon visible-xs"><i
+                    <li><a href="/recipes/category/MainCourse" data-tab="4"><span class="icon visible-xs"><i
                                     class="flaticon-boiled"></i></span><span class="hidden-xs">Main Course</span></a>
                     </li>
-                    <li><a href="#" data-tab="5"><span class="icon visible-xs"><i
+                    <li><a href="/recipes/category/Dessert" data-tab="5"><span class="icon visible-xs"><i
                                     class="flaticon-piece-of-cake"></i></span><span class="hidden-xs">Desssert</span></a>
                     </li>
                 </ul>
@@ -34,91 +34,9 @@
                     <div class="fh5co-tab-content tab-content active" data-tab-content="1">
 
                         <div class="row">
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/noodle_soup.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Beef Noodle Soup</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/meat_mushroom_burger.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Meat Mushroom Burger</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/berries_pancake.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Berries Pancake</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/turkey_meatloaf.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Turkey Meatloaf with BBQ Glaze</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/balsamic_bruschetta.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Balsamic Bruschetta</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4 text-center animate-box">
-                                <a href="single.html">
-                                    <div class="product">
-                                        <div class="product-grid"
-                                            style="background-image:url(images/chocolate_molten_cake.jpg);">
-                                            <div class="inner">
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <h3><a href="single.html">Chocolate Molten Cake</a></h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            {{#each recipes as |recipe|}}
+                            {{> recipe-info recipe }}
+                            {{/each}}
                         </div>
                     </div>
 
