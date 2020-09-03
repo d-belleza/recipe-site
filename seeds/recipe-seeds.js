@@ -88,6 +88,14 @@ const recipedata = [
     category: 'Appetizers',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6250130.jpg',
     user_id: 5
+  },
+  {
+    title: 'Wacky Cake VIII',
+    ingredients: '1 ½ cups all-purpose flour, 1 cup white sugar, 4 tablespoons unsweetened cocoa powder, 1 teaspoon baking soda, ½ teaspoon salt, 1 teaspoon vanilla extract, 1 tablespoon cider vinegar, 6 tablespoons vegetable oil, 1 cup water',
+    recipe_steps: 'Sift flour sugar salt soda and cocoa together into an 8x8 inch ungreased cake pan. Make three depressions. Pour oil into one well, vinegar into second, and vanilla into third well. Pour water over all, and stir well with fork., Sift flour, sugar, salt soda and cocoa together into an 8x8 inch ungreased cake pan. Make three depressions. Pour oil into one well vinegar into second and vanilla into third well. Pour water over all and stir well with fork.',
+    category: 'Dessert',
+    image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2540121.jpg',
+    user_id: 5
   }
 
 ];
