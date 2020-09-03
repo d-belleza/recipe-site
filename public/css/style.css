@@ -736,6 +736,7 @@ figure {
 
 .product {
   margin-bottom: 40px;
+  margin-top: 60px;
 }
 
 .product .product-grid {
@@ -828,9 +829,10 @@ figure {
 
 .fh5co-tabs .fh5co-tab-nav {
   clear: both;
-  margin: 0 0 3em 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 3px;
-  float: left;
   width: 100%;
   background: #f2f2f2;
   border-radius: 4px;
@@ -1660,7 +1662,7 @@ figure {
   /*  object-fit is not supported on IE  */
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .jumbotron .container {

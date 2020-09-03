@@ -839,6 +839,7 @@ figure {
 // PRODUCT
 .product {
   margin-bottom: 40px;
+  margin-top: 60px;
   .product-grid {
     background-size: cover;
     background-position: top center;
@@ -930,9 +931,10 @@ figure {
 .fh5co-tabs {
   .fh5co-tab-nav {
     clear: both;
-    margin: 0 0 3em 0;
+    display: inline-flex;
+    // margin: 0 0 3em 0;
     padding: 3px;
-    float: left;
+    // float: left;
     width: 100%;
     background: lighten($brand-black, 95%);
     @include border-radius(4px);
@@ -944,6 +946,7 @@ figure {
       text-align: center;
       list-style: none;
       @include inline-block;
+      
       .icon {
         font-size: 30px;
       }
@@ -951,11 +954,13 @@ figure {
         padding: 20px;
         width: 100%;
         float: left;
+        
         @include border-radius(4px);
         color: lighten($brand-black, 70%);
         &:hover {
           color: lighten($brand-black, 30%);
         }
+       
       }
       &.active {
         a {
@@ -1747,7 +1752,7 @@ figure {
   height: 100%;
   /*  object-fit is not supported on IE  */
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .jumbotron .container {
   z-index: 2;

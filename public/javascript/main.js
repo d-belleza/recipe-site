@@ -103,7 +103,7 @@
     };
 
     // Tabs function on recipes page to filter the category
-    //var tabs = function () {
+    var tabs = function () {
 
         // Auto adjust height
         // $('.fh5co-tab-content-wrap').css('height', 0);
@@ -131,7 +131,7 @@
 
         // };
 
-        // autoHeight();
+        autoHeight();
 
 
         // Click tab menu
@@ -209,7 +209,7 @@
         offcanvasMenu();
         burgerMenu();
         dropdown();
-        //tabs();
+       // tabs();
         goToTop();
         deferVideo();
       
