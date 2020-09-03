@@ -24,13 +24,12 @@ Comment.init(
         }
       },
       recipe_id: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          references: {
-              model: 'recipe', 
-              key: 'id'
-            }
-        }    
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'post',
+          key: 'id'
+        }
+      }
     },   
   {
     sequelize,
