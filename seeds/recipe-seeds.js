@@ -5,7 +5,7 @@ const recipedata = [
     title: 'Golden Chicken Tenders',
     ingredients: '1 (9 ounce) package chicken tenderloins, ½ cup finely crushed dry stuffing mix, 2 tablespoons melted butter',
     recipe_steps: 'Preheat oven to 350 degrees F (175 degrees C) Line a 9x13 inch baking dish with foil. Rinse and pat dry the chicken and place in the baking dish., Combine the stuffing mix with the melted butter or margarine. Place stuffing mixture on top of the chicken tenders., Bake in the preheated oven for 40 minutes.',
-    category: 'Main Course',
+    category: 'Entrée',
     image_url: 'https://nasa.gov/donec.json',
     user_id: 2
   },
@@ -21,7 +21,7 @@ const recipedata = [
     title: 'Cardamom Maple Salmon',
     ingredients: '1 ½ teaspoons salt, 1 teaspoon paprika,1 teaspoon ground cardamom, 1 teaspoon ground coriander, ½ teaspoon ground black pepper, ¼ cup grapeseed oil, 2 tablespoons maple syrup, 1 (2 pound) salmon fillet, cut into 3-inch pieces',
     recipe_steps: 'Stir salt paprika cardamom coriander and black pepper together in a bowl. Add oil and maple syrup and stir until evenly combined., Preheat a non-stick frying pan over medium-high heat about 350 degrees F (175 degrees C)., Dredge salmon pieces through the maple syrup mixture until evenly coated on all sides., Cook salmon in the preheated pan until fish flakes easily with a fork 5 to 7 minutes per side.',
-    category: 'Main Course',
+    category: 'Entrée',
     image_url: 'https://nasa.gov/donec.json',
     user_id: 1
   },
@@ -64,7 +64,32 @@ const recipedata = [
     category: 'Dessert',
     image_url: 'https://nasa.gov/donec.json',
     user_id: 5
+  },
+  {
+    title: 'Mo Bros Burgers',
+    ingredients: '1 pound ground beef, ¼ cup Worcestershire sauce, ¼ cup Italian bread crumbs, ½ tablespoon steak sauce, ½ tablespoon liquid smoke flavoring, 4 slices sharp Cheddar cheese, 4 eaches hamburger buns, split',
+    recipe_steps: 'Preheat an outdoor grill for medium-high heat and lightly oil the grate., Mix together in a bowl using your hands. Form mixture into 4 hamburger patties., Grill burgers for 5 minutes on the preheated grill. Flip and grill to your desired degree of doneness., Remove burgers from grill and cover each with a slice of Cheddar cheese. Serve on hamburger buns. ',
+    category: 'Entrée',
+    image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6310095.jpg',
+    user_id: 5
+  },
+  {
+    title: 'Campfire Pepperoni Pizza',
+    ingredients: '1 pound refrigerated pizza dough, ¼ cup pizza sauce, ½ cup shredded mozzarella cheese, ½ cup sliced pepperoni',
+    recipe_steps: 'Place pizza stone on grill directly over wood fire. Place it on the pizza stone and cook 10 minutes on one side until golden., mozzarella cheese evenly on top of the sauce followed by the pepperoni slices. Place uncooked side down, back on the pizza stone. Cover with a foil tent and cook until cheese has melted.',
+    category: 'Entrée',
+    image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1130239.jpg',
+    user_id: 5
+  },
+  {
+    title: 'Slow Cooker Buffalo Chicken Dip',
+    ingredients: '2 8 ounce skinless, boneless chicken breasts, ½ teaspoon salt, ¼ teaspoon ground black pepper, ¼ teaspoon garlic powder, 1 8 ounce package reduced-fat cream cheese, 1 8 ounce container sour cream, ½ cup Buffalo wing sauce, ½ cup shredded sharp Cheddar cheese',
+    recipe_steps: 'Season chicken breasts with salt pepper and garlic powder. Place in the slow cooker and cover with the lid. Cook on Low until chicken is cooked through about 3 hours. Drain accumulated juices. Shred chicken using a hand mixer. Add cream cheese sour cream Buffalo wing sauce and Cheddar cheese. Cook on Low for 1 more hour. Stir to combine.',
+    category: 'Appetizers',
+    image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6250130.jpg',
+    user_id: 5
   }
+
 ];
 
 const seedRecipe = () => Recipe.bulkCreate(recipedata);
