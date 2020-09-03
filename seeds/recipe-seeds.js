@@ -11,7 +11,7 @@ const recipedata = [
   },
   {
     title: 'Easy No-Bake Strawberry Ice Cream Cake',
-    ingredients: '1 (10 inch) prepared angel food cake, 2 pints strawberry ice cream, 1 (8 ounce) container thawed frozen whipped topping, 6 large fresh strawberries, sliced (optional), 1 sprig fresh mint, leaves picked (optional)',
+    ingredients: '1 (10 inch) prepared angel food cake, 2 pints strawberry ice cream, 1 (8 ounce) container thawed frozen whipped topping, 6 large fresh strawberries',
     recipe_steps: 'Using a long serrated knife or bread knife slice angel food cake into 3 equal horizontal layers. Place the bottom layer onto a freezer-proof plate.',
     category: 'Dessert',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6877011.jpg',
@@ -19,8 +19,8 @@ const recipedata = [
   },
   {
     title: 'Cardamom Maple Salmon',
-    ingredients: '1 ½ teaspoons salt, 1 teaspoon paprika,1 teaspoon ground cardamom, 1 teaspoon ground coriander, ½ teaspoon ground black pepper, ¼ cup grapeseed oil, 2 tablespoons maple syrup, 1 (2 pound) salmon fillet, cut into 3-inch pieces',
-    recipe_steps: 'Stir salt paprika cardamom coriander and black pepper together in a bowl. Add oil and maple syrup and stir until evenly combined., Preheat a non-stick frying pan over medium-high heat about 350 degrees F (175 degrees C).',
+    ingredients: '1 ½ teaspoons salt, 1 teaspoon paprika,1 teaspoon ground cardamom, 1 teaspoon ground coriander, ½ teaspoon ground black pepper, ¼ cup grapeseed oil',
+    recipe_steps: 'Stir salt paprika cardamom coriander and black pepper together in a bowl. Add oil and maple syrup and stir until evenly combined.',
     category: 'Entrée',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1122495.jpg',
     user_id: 1
@@ -36,15 +36,15 @@ const recipedata = [
   {
     title: 'Fluffy French Toast',
     ingredients: '¼ cup all-purpose flour, 1 cup milk, 1 pinch salt, 3 large eggs eggs, ½ teaspoon ground cinnamon, 1 teaspoon vanilla extract, 1 tablespoon white sugar, 12 thick slices bread',
-    recipe_steps: 'Measure flour into a large mixing bowl. Slowly whisk in the milk. Whisk in the salt eggs cinnamon vanilla extract and sugar until smooth., Heat a lightly oiled griddle or frying pan over medium heat., Soak bread slices in mixture until saturated. ',
+    recipe_steps: 'Measure flour into a large mixing bowl. Slowly whisk in the milk. Whisk in the salt eggs cinnamon vanilla extract and sugar until smooth., Heat a lightly oiled griddle or frying pan over medium heat. ',
     category: 'Breakfast',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F672031.jpg',
     user_id: 4
   },
   {
     title: 'Cheesy Ham and Hash Brown Casserole',
-    ingredients: '1 (32 ounce) package frozen hash brown potatoes, 8 ounces cooked diced ham, 2 (10.75 ounce) cans condensed cream of potato soup, 1 (16 ounce) container sour cream, 2 cups shredded sharp Cheddar cheese, 1 ½ cups grated Parmesan cheese',
-    recipe_steps: 'Preheat oven to 375 degrees F (190 degrees C). Lightly grease a 9x13 inch baking dish., In a large bowl mix hash browns ham cream of potato soup sour cream and Cheddar cheese. Spread evenly into prepared dish. Sprinkle with Parmesan cheese. ',
+    ingredients: '1 (32 ounce) package frozen hash brown potatoes, 8 ounces cooked diced ham, 2 (10.75 ounce) cans condensed cream of potato soup',
+    recipe_steps: 'Preheat oven to 375 degrees F (190 degrees C). Lightly grease a 9x13 inch baking dish., In a large bowl mix hash browns ham cream of potato soup sour cream and Cheddar cheese. Spread evenly into prepared dish. ',
     category: 'Breakfast',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F843087.jpg',
     user_id: 7
@@ -60,7 +60,7 @@ const recipedata = [
   {
     title: 'Chocolate Covered Strawberries',
     ingredients: '16 ounces milk chocolate chips, 2 tablespoons shortening, 1 pound fresh strawberries with leaves',
-    recipe_steps: 'In a double boiler melt the chocolate and shortening stirring occasionally until smooth. Holding them by the toothpicks dip the strawberries into the chocolate mixture., Insert toothpicks into the tops of the strawberries., Turn the strawberries upside down and insert the toothpick into styrofoam for the chocolate to cool.',
+    recipe_steps: 'In a double boiler melt the chocolate and shortening stirring occasionally until smooth. ',
     category: 'Dessert',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3976072.jpg',
     user_id: 5
@@ -68,7 +68,7 @@ const recipedata = [
   {
     title: 'Mo Bros Burgers',
     ingredients: '1 pound ground beef, ¼ cup Worcestershire sauce, ¼ cup Italian bread crumbs, ½ tablespoon steak sauce, ½ tablespoon liquid smoke flavoring, 4 slices sharp Cheddar cheese, 4 eaches hamburger buns, split',
-    recipe_steps: 'Preheat an outdoor grill for medium-high heat and lightly oil the grate., Mix together in a bowl using your hands. Form mixture into 4 hamburger patties., Grill burgers for 5 minutes on the preheated grill. Flip and grill to your desired degree of doneness., Remove burgers from grill and cover each with a slice of Cheddar cheese. Serve on hamburger buns. ',
+    recipe_steps: 'Preheat an outdoor grill for medium-high heat and lightly oil the grate., Mix together in a bowl using your hands.  ',
     category: 'Entrée',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6310095.jpg',
     user_id: 5
@@ -76,23 +76,23 @@ const recipedata = [
   {
     title: 'Campfire Pepperoni Pizza',
     ingredients: '1 pound refrigerated pizza dough, ¼ cup pizza sauce, ½ cup shredded mozzarella cheese, ½ cup sliced pepperoni',
-    recipe_steps: 'Place pizza stone on grill directly over wood fire. Place it on the pizza stone and cook 10 minutes on one side until golden., mozzarella cheese evenly on top of the sauce followed by the pepperoni slices. Place uncooked side down, back on the pizza stone. Cover with a foil tent and cook until cheese has melted.',
+    recipe_steps: 'Place pizza stone on grill directly over wood fire. Place it on the pizza stone and cook 10 minutes on one side until golden.',
     category: 'Entrée',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1130239.jpg',
     user_id: 5
   },
   {
     title: 'Slow Cooker Buffalo Chicken Dip',
-    ingredients: '2 8 ounce skinless, boneless chicken breasts, ½ teaspoon salt, ¼ teaspoon ground black pepper, ¼ teaspoon garlic powder, 1 8 ounce package reduced-fat cream cheese, 1 8 ounce container sour cream, ½ cup Buffalo wing sauce, ½ cup shredded sharp Cheddar cheese',
-    recipe_steps: 'Season chicken breasts with salt pepper and garlic powder. Place in the slow cooker and cover with the lid. Cook on Low until chicken is cooked through about 3 hours. Drain accumulated juices. Shred chicken using a hand mixer. Add cream cheese sour cream Buffalo wing sauce and Cheddar cheese. Cook on Low for 1 more hour. Stir to combine.',
+    ingredients: '2 8 ounce skinless, boneless chicken breasts, ½ teaspoon salt, ¼ teaspoon ground black pepper, ¼ teaspoon garlic powder, 1 8 ounce package reduced-fat cream cheese, 1 8 ounce container sour cream',
+    recipe_steps: 'Season chicken breasts with salt pepper and garlic powder. Place in the slow cooker and cover with the lid. ',
     category: 'Appetizers',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6250130.jpg',
     user_id: 5
   },
   {
     title: 'Wacky Cake VIII',
-    ingredients: '1 ½ cups all-purpose flour, 1 cup white sugar, 4 tablespoons unsweetened cocoa powder, 1 teaspoon baking soda, ½ teaspoon salt, 1 teaspoon vanilla extract, 1 tablespoon cider vinegar, 6 tablespoons vegetable oil, 1 cup water',
-    recipe_steps: 'Sift flour sugar salt soda and cocoa together into an 8x8 inch ungreased cake pan. Make three depressions. Pour oil into one well, vinegar into second, and vanilla into third well. Pour water over all, and stir well with fork., Sift flour, sugar, salt soda and cocoa together into an 8x8 inch ungreased cake pan. Make three depressions. Pour oil into one well vinegar into second and vanilla into third well. Pour water over all and stir well with fork.',
+    ingredients: '1 ½ cups all-purpose flour, 1 cup white sugar, 4 tablespoons unsweetened cocoa powder, 1 teaspoon baking soda, ½ teaspoon salt, 1 teaspoon vanilla extract, 1 tablespoon cider vinegar',
+    recipe_steps: 'Sift flour sugar salt soda and cocoa together into an 8x8 inch ungreased cake pan. Make three depressions. ',
     category: 'Dessert',
     image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2540121.jpg',
     user_id: 5
