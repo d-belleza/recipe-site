@@ -2,7 +2,6 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Recipe, User, Comment } = require('../models');
 
-// need to update this so that it only pulls the most recent recipes
 router.get('/', (req, res) => {
     console.log(req.session)
     Recipe.findAll({
@@ -77,7 +76,9 @@ router.get('/recipes/:id', (req,res) => {
         'title',
         'category',
         'image_url',
-        'created_at'
+        'created_at',
+        'recipe_steps',
+        'ingredients'
       ],
       include: [
         {
