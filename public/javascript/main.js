@@ -103,35 +103,35 @@
     };
 
     // Tabs function on recipes page to filter the category
-    var tabs = function () {
+    //var tabs = function () {
 
         // Auto adjust height
-        $('.fh5co-tab-content-wrap').css('height', 0);
-        var autoHeight = function () {
+        // $('.fh5co-tab-content-wrap').css('height', 0);
+        // var autoHeight = function () {
 
-            setTimeout(function () {
+        //     setTimeout(function () {
 
-                var tabContentWrap = $('.fh5co-tab-content-wrap'),
-                    tabHeight = $('.fh5co-tab-nav').outerHeight(),
-                    formActiveHeight = $('.tab-content.active').outerHeight(),
-                    totalHeight = parseInt(tabHeight + formActiveHeight + 90);
+        //         var tabContentWrap = $('.fh5co-tab-content-wrap'),
+        //             tabHeight = $('.fh5co-tab-nav').outerHeight(),
+        //             formActiveHeight = $('.tab-content.active').outerHeight(),
+        //             totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
-                tabContentWrap.css('height', totalHeight);
+        //         tabContentWrap.css('height', totalHeight);
 
-                $(window).resize(function () {
-                    var tabContentWrap = $('.fh5co-tab-content-wrap'),
-                        tabHeight = $('.fh5co-tab-nav').outerHeight(),
-                        formActiveHeight = $('.tab-content.active').outerHeight(),
-                        totalHeight = parseInt(tabHeight + formActiveHeight + 90);
+        //         $(window).resize(function () {
+        //             var tabContentWrap = $('.fh5co-tab-content-wrap'),
+        //                 tabHeight = $('.fh5co-tab-nav').outerHeight(),
+        //                 formActiveHeight = $('.tab-content.active').outerHeight(),
+        //                 totalHeight = parseInt(tabHeight + formActiveHeight + 90);
 
-                    tabContentWrap.css('height', totalHeight);
-                });
+        //             tabContentWrap.css('height', totalHeight);
+        //         });
 
-            }, 100);
+        //     }, 100);
 
-        };
+        // };
 
-        autoHeight();
+        // autoHeight();
 
 
         // Click tab menu
@@ -209,7 +209,7 @@
         offcanvasMenu();
         burgerMenu();
         dropdown();
-        tabs();
+        //tabs();
         goToTop();
         deferVideo();
       
