@@ -10,7 +10,7 @@ const recipedata = [
     user_id: 2
   },
   {
-    title: 'Easy No-Bake Strawberry Ice Cream Cake',
+    title: 'No-Bake Strawberry Ice Cream Cake',
     ingredients: '1 (10 inch) prepared angel food cake, 2 pints strawberry ice cream, 1 (8 ounce) container thawed frozen whipped topping, 6 large fresh strawberries',
     recipe_steps: 'Using a long serrated knife or bread knife slice angel food cake into 3 equal horizontal layers. Place the bottom layer onto a freezer-proof plate.',
     category: 'Dessert',
