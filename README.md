@@ -6,9 +6,9 @@ This application was built to allow users to find new recipes and share their ow
 
 ## Table of Contents
 * [Built With](#builtwith)
-* [Screenshots](#screenshots)
 * [Contributing](#contributing)
-* [Questions](#questions)
+* [Application Link](#applicationlink)
+* [Screenshots](#screenshots)
 
 ## Built With
 * MySQL
@@ -19,6 +19,13 @@ This application was built to allow users to find new recipes and share their ow
 * JawsDB
 * Sass
 * Express.js
+
+## Contributing
+This application was created by David Belleza, Melissa Cadena, Sylvia Prabudy, and Cherie Cookson.
+
+## Application Link
+Deployed Heroku Application - https://git-cookin.herokuapp.com/
+
 
 ## Screenshots
 
@@ -45,6 +52,4 @@ When logged in, you can view your dashboard that shows your recipes. Here you ha
 You can either view all recipes or view by category.
 <img src="public/images/localhost_3001_recipes.png">
 
-## Contributing
-This application was created by David Belleza, Melissa Cadena, Sylvia Prabudy, and Cherie Cookson.
 
