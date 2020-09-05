@@ -1,10 +1,15 @@
 const router = require('express').Router();
-const sequelize = require('../config/connection');
+const { Op } = require('sequelize');
 const { Recipe, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     console.log(req.session)
     Recipe.findAll({
+        where: {
+          id: {
+            [Op.between]: [1,6]
+          }
+        },
         attributes: [
             'id',
             'title',
