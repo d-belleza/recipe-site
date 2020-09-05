@@ -23,7 +23,7 @@
                 <img class="img-responsive" src="{{recipe.image_url}}" alt="{{recipe.title}}">
             </div>
             <div class="col-md-12 text-center mt-25">
-                <h4>Posted by {{user.username}} on {{format_date recipe.created_at}}</h4>
+                <h4>Posted by {{recipe.user.username}} on {{format_date recipe.created_at}}</h4>
             </div>
         </div>
 
