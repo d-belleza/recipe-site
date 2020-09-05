@@ -1,10 +1,10 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Recipe, User, Comment } = require('../models');
-// const withAuth = require('../utils/auth');
+const withAuth = require('../utils/auth');
 
 // gets all recipes posted by user that is currently logged in
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     console.log(req.session.user_id)
     Recipe.findAll({
       where: {
@@ -46,12 +46,12 @@ router.get('/', (req, res) => {
 });
 
 // add new recipe
-router.get('/new', (req,res) => {
+router.get('/new', withAuth, (req,res) => {
   res.render('add-post', {loggedIn: true});
 })
 
 // when clicking on edit post, will be redirected to this page
-router.get('/edit/:id', (req, res) => {
+router.get('/edit/:id', withAuth, (req, res) => {
     Recipe.findByPk(req.params.id, {
         attributes: [
             'id',
