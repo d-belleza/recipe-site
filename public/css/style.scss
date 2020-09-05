@@ -388,7 +388,6 @@ figure {
     .desc {
       //   background: rgba(255, 255, 255, 0.3);
       padding: 7%;
-
     }
   }
   .flexslider {
@@ -487,35 +486,8 @@ figure {
   position: relative;
 }
 
-// #fh5co-counter {
-//   height: 500px;
-//   .display-t,
-//   .display-tc {
-//     height: 500px;
-//     display: table;
-//     width: 100%;
-//   }
-//   @media screen and (max-width: $screen-md) {
-//     height: inherit;
-//     padding: 7em 0;
-//     .display-t,
-//     .display-tc {
-//       height: inherit;
-//     }
-//   }
-//   @media screen and (max-width: $screen-sm) {
-//     height: inherit;
-//     padding: 7em 0;
-//     .display-t,
-//     .display-tc {
-//       height: inherit;
-//     }
-//   }
-// }
-
 .fh5co-cover {
   height: 800px;
-
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -565,103 +537,6 @@ figure {
     }
   }
 }
-
-// .about-content {
-//   margin-bottom: 7em;
-//   img {
-//     border: 1px solid rgba($brand-black, 0.05);
-//     padding: 10px;
-//   }
-//   .desc {
-//     margin-bottom: 3em;
-//   }
-// }
-// .fh5co-staff {
-//   text-align: center;
-//   margin-bottom: 30px;
-//   img {
-//     width: 170px;
-//     margin-bottom: 20px;
-//     @include border-radius(50%);
-//   }
-//   h3 {
-//     font-size: 24px;
-//     margin-bottom: 5px;
-//   }
-//   p {
-//     margin-bottom: 30px;
-//   }
-//   .role {
-//     color: lighten($brand-black, 75%);
-//     margin-bottom: 30px;
-//     font-weight: normal;
-//     display: block;
-//   }
-// }
-
-// .fh5co-social-icons {
-//   margin: 0;
-//   padding: 0;
-//   li {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-//     @include inline-block;
-//     a {
-//       @include inline-block;
-//       color: $brand-primary;
-//       padding-left: 10px;
-//       padding-right: 10px;
-//       i {
-//         font-size: 20px;
-//       }
-//     }
-//   }
-// }
-
-// .fh5co-contact-info {
-//   ul {
-//     padding: 0;
-//     margin: 0;
-//     li {
-//       padding: 0 0 0 40px;
-//       margin: 0 0 30px 0;
-//       list-style: none;
-//       position: relative;
-//       &:before {
-//         color: $brand-primary;
-//         position: absolute;
-//         left: 0;
-//         top: 0.05em;
-//         @include icomoon;
-//       }
-//       &.address {
-//         &:before {
-//           font-size: 30px;
-//           content: "\e9d1";
-//         }
-//       }
-//       &.phone {
-//         &:before {
-//           font-size: 23px;
-//           content: "\e9f4";
-//         }
-//       }
-//       &.email {
-//         &:before {
-//           font-size: 23px;
-//           content: "\e9da";
-//         }
-//       }
-//       &.url {
-//         &:before {
-//           font-size: 23px;
-//           content: "\e9af";
-//         }
-//       }
-//     }
-//   }
-// }
 
 #fh5co-header,
 #fh5co-counter,
@@ -832,7 +707,6 @@ figure {
     font-size: 15px;
     letter-spacing: 1px;
     font-weight: 600;
-    // color: #5d5d5d;
   }
 }
 
@@ -923,10 +797,6 @@ figure {
     }
   }
 }
-
-// .product-carousel {
-//   margin-bottom: 7em;
-// }
 
 .fh5co-tabs {
   .fh5co-tab-nav {
@@ -1106,59 +976,6 @@ figure {
   }
 }
 
-// #fh5co-testimonial {
-//   background: #efefef;
-//   .testimony-slide {
-//     text-align: center;
-//     span {
-//       font-size: 12px;
-//       text-transform: uppercase;
-//       letter-spacing: 2px;
-//       font-weight: 700;
-//       display: block;
-//     }
-
-//     figure {
-//       margin-bottom: 10px;
-//       @include inline-block;
-
-//       img {
-//         width: 100px;
-//         @include border-radius(50%);
-//       }
-//     }
-
-//     blockquote {
-//       border: none;
-//       margin: 30px auto;
-//       width: 50%;
-//       position: relative;
-//       padding: 0;
-//       @media screen and (max-width: $screen-md) {
-//         width: 100%;
-//       }
-//     }
-//   }
-
-//   .arrow-thumb {
-//     position: absolute;
-//     top: 40%;
-//     display: block;
-//     width: 100%;
-
-//     a {
-//       font-size: 32px;
-//       color: #dadada;
-
-//       &:hover,
-//       &:focus,
-//       &:active {
-//         text-decoration: none;
-//       }
-//     }
-//   }
-// }
-
 #fh5co-started {
   background: rgba($brand-primary, 1);
 
@@ -1261,17 +1078,6 @@ figure {
     }
   }
 }
-
-// #map {
-//   height: 500px;
-//   width: 100%;
-//   @media screen and (max-width: $screen-sm) {
-//     height: 400px;
-//   }
-//   @media screen and (max-width: $screen-xs) {
-//     height: 200px;
-//   }
-// }
 
 // off canvas
 #fh5co-offcanvas {
@@ -1411,6 +1217,7 @@ figure {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .gototop {
   position: fixed;
   bottom: 20px;
@@ -1685,40 +1492,40 @@ figure {
   }
 }
 
-.btn-outline {
-  background: none;
-  border: 2px solid lighten($brand-black, 50%);
-  font-size: 16px;
-  @include transition(0.3s);
-  &:hover,
-  &:focus,
-  &:active {
-    box-shadow: none;
-  }
-}
+// .btn-outline {
+//   background: none;
+//   border: 2px solid lighten($brand-black, 50%);
+//   font-size: 16px;
+//   @include transition(0.3s);
+//   &:hover,
+//   &:focus,
+//   &:active {
+//     box-shadow: none;
+//   }
+// }
 
-.btn.with-arrow {
-  position: relative;
-  @include transition(0.3s);
-  i {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    margin-top: -8px;
-    @include transition(0.2s);
-  }
-  &:hover {
-    padding-right: 50px;
-    i {
-      color: $brand-white;
-      right: 18px;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-}
+// .btn.with-arrow {
+//   position: relative;
+//   @include transition(0.3s);
+//   i {
+//     visibility: hidden;
+//     opacity: 0;
+//     position: absolute;
+//     right: 0px;
+//     top: 50%;
+//     margin-top: -8px;
+//     @include transition(0.2s);
+//   }
+//   &:hover {
+//     padding-right: 50px;
+//     i {
+//       color: $brand-white;
+//       right: 18px;
+//       visibility: visible;
+//       opacity: 1;
+//     }
+//   }
+// }
 // Form Input Field
 .form-control {
   box-shadow: none;
@@ -1736,7 +1543,6 @@ figure {
 }
 
 // Hero video jumbotron
-
 .jumbotron {
   position: relative;
   overflow: hidden;
@@ -1778,7 +1584,6 @@ figure {
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
-
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
     linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
   background-repeat: no-repeat, repeat;
@@ -1811,7 +1616,6 @@ figure {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22graytext%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
     linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
 }
-
 .select-css:disabled:hover,
 .select-css[aria-disabled="true"] {
   border-color: #aaa;
@@ -1845,16 +1649,6 @@ figure {
     content: "\e116";
   }
 }
-
-// .fh5co-loader {
-//   position: fixed;
-//   left: 0px;
-//   top: 0px;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 9999;
-//   background: url(../images/loader.gif) center no-repeat #fff;
-// }
 
 .animate-box {
   .js & {
