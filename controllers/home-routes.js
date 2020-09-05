@@ -103,7 +103,7 @@ router.get('/recipes/:id', (req,res) => {
 
       // serialize the data
       const recipe = dbPostData.get({ plain: true });
-
+      console.log(recipe);
       // pass data to template
       res.render('single-recipe', {
         recipe,
