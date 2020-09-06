@@ -2,11 +2,11 @@ const { Recipe } = require('../models');
 
 const recipedata = [
   {
-    title: 'Golden Chicken Tenders',
-    ingredients: '1 (9 ounce) package chicken tenderloins, ½ cup finely crushed dry stuffing mix, 2 tablespoons melted butter',
-    recipe_steps: 'Preheat oven to 350 degrees F (175 degrees C) Line a 9x13 inch baking dish with foil. Rinse and pat dry the chicken and place in the baking dish., Combine the stuffing mix with the melted butter or margarine. ',
+    title: 'Turkey Meatloaf', 
+    ingredients: '1/4 cup plus 2 tbsp ketchup, I use organic, 2 tsp Worcestershire sauce, 1/2 small onion, 1 tsp olive oil, 1.3 lb 99% lean ground turkey, 1/2 cup seasoned whole wheat or gluten-free breadcrumbs, 1 large egg, 1 tsp marjoram, 1 teaspoon kosher salt',
+    recipe_steps: 'Preheat the oven to 350F., In a small bowl combine 2 tbsp of the ketchup with Worcestershire sauce., In a small skillet, heat olive oil and onion on low heat until translucent, In a medium bowl combine the turkey, onion, breadcrumbs, egg, 1/4 cup ketchup, salt and marjoram., Place mixture into a loaf pan or shape into a loaf and place on a baking pan. Spoon sauce on top., Bake uncovered for 55-60 minutes, remove from oven and let it sit for 5 minutes before slicing.',
     category: 'Entree',
-    image_url: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F176417.jpg',
+    image_url: 'http://git-cookin.herokuapp.com/images/turkey_meatloaf.jpg',
     user_id: 2
   },
   {
