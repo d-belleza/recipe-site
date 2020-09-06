@@ -24,7 +24,7 @@ const commentdata = [
       {
         comment_text: 'In hac habitasse platea dictumst.',
         user_id: 7,
-        recipe_id: 13
+        recipe_id: 11
       },
       {
         comment_text: 'Vivamus vestibulum sagittis sapien.',
@@ -141,12 +141,12 @@ const commentdata = [
       {
         comment_text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
         user_id: 1,
-        recipe_id: 16
+        recipe_id: 10
       },
       {
         comment_text: 'Nam tristique tortor eu pede.',
         user_id: 4,
-        recipe_id: 18
+        recipe_id: 1
       },
       {
         comment_text: 'Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.',
@@ -176,7 +176,7 @@ const commentdata = [
       {
         comment_text: 'Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.',
         user_id: 5,
-        recipe_id: 14
+        recipe_id: 11
       },
       {
         comment_text: 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.',
@@ -196,12 +196,12 @@ const commentdata = [
       {
         comment_text: 'Etiam vel augue. Vestibulum rutrum rutrum neque.',
         user_id: 8,
-        recipe_id: 19
+        recipe_id: 8
       },
       {
         comment_text: 'Proin at turpis a pede posuere nonummy.',
         user_id: 8,
-        recipe_id: 19
+        recipe_id: 12
       },
       {
         comment_text: 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.',
@@ -234,7 +234,7 @@ const commentdata = [
         comment_text:
           'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.',
         user_id: 7,
-        recipe_id: 19
+        recipe_id: 5
       },
       {
         comment_text: 'Integer ac leo. Pellentesque ultrices mattis odio.',
@@ -244,7 +244,7 @@ const commentdata = [
       {
         comment_text: 'Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.',
         user_id: 10,
-        recipe_id: 19
+        recipe_id: 10
       },
       {
         comment_text:

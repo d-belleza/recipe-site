@@ -105,11 +105,7 @@ router.get('/recipes/:id', (req,res) => {
         res.status(404).json({ message: 'No post found with this id' });
         return;
       }
-
-      // serialize the data
       const recipe = dbPostData.get({ plain: true });
-      console.log(recipe);
-      // pass data to template
       res.render('single-recipe', {
         recipe,
         loggedIn: req.session.loggedIn

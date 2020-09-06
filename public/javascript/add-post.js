@@ -1,15 +1,11 @@
-// function can still be edited based on how html is written since dashboard has not yet been created
-
 async function newFormHandler(event) {
     event.preventDefault();
-    console.log('submit is working')
   
     const title = document.querySelector('#title').value;
     const ingredients = document.querySelector('#ingredients').value;
     const recipe_steps = document.querySelector('#steps').value;
     const image_url = document.querySelector('#image_link').value;
     const category = document.querySelector('#category').value;
-  
 
     const response = await fetch(`/api/recipes`, {
       method: 'POST',

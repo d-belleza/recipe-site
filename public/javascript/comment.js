@@ -1,5 +1,3 @@
-// function can still be edited based on how html is written since handlebars has not yet been created
-
 async function commentFormHandler(event) {
     event.preventDefault();
   
